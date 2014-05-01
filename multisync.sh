@@ -1,4 +1,4 @@
-#  ! /bin/bash
+#!/bin/bash
 
 ##multisync.sh
 ##Spawns multiple parallel rsync sessions for each directory it encounters, based on the number of CPU cores
