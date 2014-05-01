@@ -27,7 +27,7 @@ let JOB_CNT=CPU_CNT*3 - 2
 [ -z "$LIST" ] && LIST="-tPavW --exclude .snapshot --exclude hourly.?"
 echo "rsyncing From=$SRC_DIR To=$DEST_DIR"
 
-#make the destination directory if it doesnt exist, if it does this will fail silently
+#make the destination directory if it doesnt exist, if it does this will fail silently, more logic
 mkdir -p $DEST_DIR
 [ -z "$RSYNC_OPTS" ] && RSYNC_OPTS="-tPavW --delete-during --exclude .snapshot --exclude hourly.?"
 
