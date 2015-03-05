@@ -1,1 +1,5 @@
-README for multisync.sh
+Uses xargs to spawn an rsync process for each directory, limited by CPU count
+
+When moving several TB of tiny files over 10gig a single rsync thread is slow. A bunch of rsyncs at once is fast.
+
+Use this if you cant install a tool specifically for moving data like bbcp or aspera
